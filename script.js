@@ -53,6 +53,7 @@
       }
     }
 
+
     // ---- Gmail compose links (built from split parts so Cloudflare can't obfuscate) ----
     document.querySelectorAll("a[data-gmail]").forEach(function (a) {
       var to = a.getAttribute("data-user") + "@" + a.getAttribute("data-domain");
