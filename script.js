@@ -62,6 +62,8 @@
         "&body=" + (a.getAttribute("data-body") || "");
       a.target = "_blank";
       a.rel = "noopener";
+      var label = a.querySelector("[data-email-text]");
+      if (label) label.textContent = to;
     });
 
     // ---- Reveal on scroll ----
