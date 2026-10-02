@@ -369,3 +369,27 @@ p{margin:0 0 1rem}
 .faq p{margin:0;padding:0 50px 24px 4px;color:var(--muted);max-width:68ch}
 .faq p a{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 @media (max-width:520px){.faq p{padding-right:4px}.faq summary{font-size:1rem;padding:18px 2px}}
+
+/* ---------- Switch to Abbott Steel + sister band ---------- */
+.nav-switch{flex:none;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;border:1.5px solid rgba(244,196,0,.55);color:#fff;font-weight:600;font-size:.85rem;letter-spacing:.02em;background:rgba(255,255,255,.04);transition:background .25s,border-color .25s,color .25s}
+.nav-switch svg{color:var(--accent);transition:transform .45s var(--ease)}
+.nav-switch:hover{background:var(--accent);border-color:var(--accent);color:#160b02}
+.nav-switch:hover svg{color:#160b02;transform:rotate(180deg)}
+.nav-switch:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:1100px){.nav-switch span{display:none}.nav-switch{width:44px;padding:0;justify-content:center}}
+@media (max-width:760px){.nav .nav-switch{display:inline-flex}}
+.sister{background:var(--ink-2);color:#eceef2;padding:88px 0;border-top:3px solid var(--accent);position:relative;overflow:hidden}
+.sister::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 22px);pointer-events:none}
+.sister-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.sister-media{position:relative}
+.sister-media img{width:100%;height:auto;filter:saturate(.82) contrast(1.05);box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.sister-tag{position:absolute;left:-12px;bottom:-12px;background:var(--accent);color:#160b02;font-family:"Anton",sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:10px 16px;font-size:1rem}
+.sister .eyebrow{color:var(--gold)}
+.sister .eyebrow::before{background:var(--gold)}
+.sister h2{font-size:clamp(1.9rem,4.4vw,3rem);margin-bottom:16px}
+.sister p{color:var(--muted-d);font-size:1.04rem;max-width:56ch}
+.sister-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.sister .btn--ghost{color:#fff;border-color:rgba(255,255,255,.35)}
+.sister .btn svg{flex:none}
+@media (max-width:960px){.sister-grid{grid-template-columns:1fr;gap:36px}.sister-tag{left:12px}}
+@media (max-width:760px){.sister{padding:64px 0}}
